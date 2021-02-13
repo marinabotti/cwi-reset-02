@@ -2,17 +2,13 @@ package Exercicio01;
 
 public class Aplicacao {
 
+    public static void main(String[] args) {
+        Diretor diretor = new Diretor("Christopher Nolan", 50, 100,Genero.MASCULINO);
 
-    public static void main(String[] args){
+        Filme interestelar = new Filme("Interestelar", "Melhor filme", 120, 2014, 5, diretor);
+        Filme batman = new Filme("Batman", "Melhor triologia", 90, 2008, 5, diretor);
 
-        Filme filmeTitanic = new Filme("Titanic", "Suspense",220,1999,"5.0",
-                "ABC"," James Cameron",60,"100");
-
-        Filme filmePsicose = new Filme("Psicose", "Terror",60, 1957,"5.0",
-                "ABC","XXXX",80,"5");
-
-        filmeTitanic.exibirFilme();
-        filmePsicose.exibirFilme();
-
+        interestelar.reproduzir();
+        batman.reproduzir();
     }
 }
